@@ -1,12 +1,12 @@
 import math
 
-num1 = int(input("Введите число над которим хотите сделать какую-либо операцию: "))
-operator = input("Введите знак для виполнения операции: " )
+num1 = int(input("Enter the number on which you want to perform some operation: "))
+operator = input("Enter a character to perform the operation: " )
 
 if operator == "sqrt":
     var = math.sqrt(num1)
 else:
-    num2 = int(input("Введите второе число: "))
+    num2 = int(input("Enter the second number: "))
     if operator == "+":
         var = num1 + num2
     elif operator == "-":
@@ -17,16 +17,15 @@ else:
         if num2 != 0:
             var = num1 / num2
         else:
-            var = "ошибка деления на ноль"
+            var = "division by zero error"
     elif operator == "*":
         var = num1 * num2
     elif operator == "**":
         var = num1 ** num2
     else:
-        var = "неверный оператор"
+        var = "invalid operator"
 
-print(var)
-
+print("Your answer:", var)
 
 
 
